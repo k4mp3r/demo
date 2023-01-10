@@ -15,6 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.util.UriComponentsBuilder;
 
 import com.example.demo.config.MainConfig;
+import com.example.demo.domain.tavern.TavernService;
 import com.example.demo.domain.ward.WardService;
 import com.fasterxml.jackson.databind.node.TextNode;
 
@@ -26,7 +27,7 @@ public class MainController {
 
     @Autowired MainConfig mainConfig;
     @Autowired WardService wardService;
-    @Autowired TavernService TavernService
+    @Autowired TavernService tavernService;
 
     @GetMapping(value = "/")
     @ResponseStatus(value = HttpStatus.OK)
